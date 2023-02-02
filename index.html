@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OCR</title>
+    <link
+      rel="icon"
+      href="data:image/png;base64,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"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="App.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img
+          src="data:image/png;base64,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"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        ocr
+      </a>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <input type="file" id="upload" />
+          <button class="btn btn-primary" id="submit">Submit</button>
+          <div id="loader" class="lds-dual-ring hidden overlay"></div>
+          <fieldset style="margin-top: 40px" className="results-wrapper">
+            <div class="alert alert-primary" role="alert">Results</div>
+            <textarea
+              style="height: 300px; width: 70%"
+              id="result"
+              readonly="{true}"
+            ></textarea>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var fileBase64 = null;
+        var fileType = "";
+        //// convert file to blob
+
+        function makeblob(b64Data, contentType, sliceSize) {
+          contentType = contentType || "";
+          sliceSize = sliceSize || 512;
+
+          var byteCharacters = atob(b64Data);
+          var byteArrays = [];
+          console.log(byteCharacters);
+          for (
+            var offset = 0;
+            offset < byteCharacters.length;
+            offset += sliceSize
+          ) {
+            var slice = byteCharacters.slice(offset, offset + sliceSize);
+            console.log(slice);
+            var byteNumbers = new Array(slice.length);
+            for (var i = 0; i < slice.length; i++) {
+              byteNumbers[i] = slice.charCodeAt(i);
+            }
+
+            var byteArray = new Uint8Array(byteNumbers);
+
+            byteArrays.push(byteArray);
+          }
+
+          var blob = new Blob(byteArrays, { type: contentType });
+          return blob;
+        }
+        ////////////////// get file base64 /////////////////
+        $("#upload").change(function () {
+          var reader = new FileReader();
+          var file = this.files[0];
+          //  var mb = $(this).serializeObject();
+          console.log(file);
+          fileType = file.type;
+          reader.onload = function () {
+            var resultData = this.result;
+            resultData = resultData.split(",")[1];
+            fileBase64 = resultData;
+          };
+
+          reader.readAsDataURL(file);
+        });
+////////////////////////////
+        $(document).on("click", "#submit", function () {
+          console.log(fileBase64);
+          console.log("hello");
+
+          var params = {
+            // Request parameters
+            language: "ar",
+            "model-version": "2022-01-30-preview",
+            readingOrder: "basic",
+          };
+
+          $.ajax({
+            url:
+              "https://passocr.cognitiveservices.azure.com/vision/v3.2/read/analyze?" +
+              $.param(params),
+            beforeSend: function (xhrObj) {
+              // Request headers
+              xhrObj.setRequestHeader(
+                "Ocp-Apim-Subscription-Key",
+                "9fd0e0fd97614bdd9dd0ac7b51882734"
+              );
+            },
+            contentType: "application/octet-stream",
+            mime: "application/octet-stream",
+            type: "POST",
+            cache: false,
+            processData: false,
+            // Request body
+            data: makeblob(fileBase64, fileType),
+            // JSON.stringify({
+            //   url: $("#upload").val(), // "https://dbocr.blob.core.windows.net/imagedocs/1900 (1).png"
+            // })
+          })
+            .then(function (data, textStatus, request) {
+              var op = request.getResponseHeader("Operation-Location");
+              interval = 1000;
+              var x = setInterval(() => {
+                console.log("Run");
+                if (textStatus === "success") {
+                  $.ajax({
+                    url: op,
+                    beforeSend: function (xhrObj) {
+                      $("#loader").removeClass("hidden");
+                      // Request headers
+                      xhrObj.setRequestHeader(
+                        "Content-Type",
+                        "application/json"
+                      );
+                      xhrObj.setRequestHeader(
+                        "Ocp-Apim-Subscription-Key",
+                        "9fd0e0fd97614bdd9dd0ac7b51882734"
+                      );
+                    },
+
+                    type: "GET",
+                    complete: function () {
+                      $("#loader").addClass("hidden");
+                    },
+                  })
+
+                    .done(function (data2, textStatus2, request) {
+                      if (data2.analyzeResult) {
+                        textStatus = "end";
+                        clearInterval(x);
+                        let lines = data2.analyzeResult.readResults[0].lines;
+                        let text = lines.map((obj) => obj.text);
+                        document.getElementById("result").innerHTML = text;
+                        $("#upload").val("");
+                        console.log(text);
+                      }
+                      //console.log(data2);
+                    })
+                    .fail(function () {});
+                }
+              }, interval);
+            })
+            .fail(function () {});
+        });
+      });
+    </script>
+  </body>
+</html>
